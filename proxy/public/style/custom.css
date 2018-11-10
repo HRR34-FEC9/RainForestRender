@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+#bottom {
+  width: 100%;
+}
+#bottom #ads {
+  width: 33%;
+  background-color: grey;
+  float: left;
+}
+#bottom #review_block {
+  width: 66%;
+  float: left;
+}
+#bottom #review_block .review {
+  width: inherit;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: black;
+  margin-bottom: 30px;
+}
+#bottom #review_block .review .user {
+  width: inherit;
+  height: 35px;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+#bottom #review_block .review .user .avatar {
+  margin-right: 10px;
+  float: left;
+}
+#bottom #review_block .review .user .avatar img {
+  height: 35px;
+  width: 35px;
+}
+#bottom #review_block .review .user .username {
+  float: left;
+  line-height: 30px;
+}
+#bottom #review_block .review .rating_title_box {
+  width: inherit;
+  height: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#bottom #review_block .review .rating_title_box .stars {
+  margin-right: 5px;
+  float: left;
+}
+#bottom #review_block .review .rating_title_box .title {
+  font-weight: bold;
+  float: left;
+}
+#bottom #review_block .review .date {
+  color: grey;
+  height: 20px;
+}
+#bottom #review_block .review .version {
+  color: grey;
+}
+#bottom #review_block .review .text {
+  line-height: 18px;
+}
+#bottom #review_block .review .gallery {
+  width: inherit;
+  height: auto;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+#bottom #review_block .review .gallery .image {
+  width: 130px;
+  height: 90px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  float: left;
+}
+#bottom #review_block .review .bottom_box {
+  width: inherit;
+}
+#bottom #review_block .review .bottom_box .helpful {
+  color: grey;
+}
+#bottom #review_block .review .bottom_box .helpful-button {
+  width: 90px;
+  height: 25px;
+  padding: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  float: left;
+}
+#bottom #review_block .review .bottom_box .buttons {
+  float: left;
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=custom.css.map */

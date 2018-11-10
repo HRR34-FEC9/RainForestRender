@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#centerCol {
+  display: flex;
+  flex-flow: column wrap;
+  width: 379px;
+  height: 863px;
+  font-family: Arial,sans-serif;
+}
+
+.titleSection {
+  width: 375px;
+  height: auto;
+}
+
+.titleText {
+  text-rendering: optimizeLegibility;
+  font-size: 25px!important;
+}
+
+.companyName {
+   margin-top: 8px;
+}
+
+.askPipe {
+  color: #666;
+  padding: 0 5px 0 5px;
+}
+
+.customerReviews {
+   margin-top: 5px;
+   display: inline-block;
+   box-sizing: border-box;
+   position: relative;
+}
+
+.questions {
+   margin-top: 7px;
+}
+
+.askLink {
+  text-decoration: none;
+  color: #0066c0;
+}
+
+.columnOne {
+  text-align: right;
+  color: #555;
+  padding-right: 3px;
+}
+
+.retailPrice {
+  padding-left: 3px;
+}
+
+.salePrice {
+  color: #B12704;
+  font-size: 20px;
+  padding-left: 3px;
+}
+
+.savings {
+  color: #B12704;
+  padding-left: 3px;
+}
+
+.discount {
+  padding-left: 3px;
+}
+
+.sizeButtons {
+  margin: 10px 0px 10px 0px;
+}
+
+.ulist {
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.sizeBox {
+  border: 1px solid #e7e7e7;
+  border-radius: 2px;
+  text-align: center;
+  height: 48px;
+  width: 77px;
+  margin: 5px;
+  padding: 0px;
+}
+
+.sizeBoxSelected {
+  border: 1px solid #e77600;
+  background-color: #e7e9ec;
+  border-radius: 2px;
+}
+
+.sizeBox:hover {
+  border: 1px solid #a2a6ac;
+  border-radius: 2px;
+  background-color: #e7e9ec;
+}
+
+.buttonTop {
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+  padding: 5px 10px 5px 11px;
+}
+
+.buttonBottom {
+  color: #555;
+  font-size: 13px;
+  line-height: 1.465px;
+  text-align: left;
+  padding: 5px 10px 5px 11px;
+}
+
+.buttonBottom:hover {
+  color: #e77600;
+  font-weight: bold;
+}
+
+.label {
+  padding-left: 2px;
+  padding-bottom: 2px;
+  color: #888;
+  font-weight: 400;
+}
+
+.sizeBoxService {
+  border: 1px solid #e7e7e7;
+  border-radius: 2px;
+  height: 48px;
+  width: 187px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.sizeBoxServiceRight {
+  border: 1px solid #e7e7e7;
+  border-radius: 2px;
+  height: 48px!important;
+  width: 155px!important;
+  margin: 0px 0px 0px 6px;
+  padding: 0px;
+}
+
+.sizeBoxService:hover {
+  border: 1px solid #a2a6ac;
+  border-radius: 2px;
+  background-color: #e7e9ec;
+}
+
+.sizeBoxServiceRight:hover {
+  border: 1px solid #a2a6ac;
+  border-radius: 2px;
+  background-color: #e7e9ec;
+}
+
+.table {
+  display: table;
+  margin: 0 auto;
+}
+
+.buttonService {
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.buttonServiceRight {
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.sprite {
+  background-image: url('AmazonUIBaseCSS-sprite_1x_V2_.png');
+  background-size: 400px 900px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 7px;
+  height: 10px;
+  background-position: -82px -293px;
+  margin-right: .385em;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.star {
+  background-image: url('AmazonUIBaseCSS-sprite_1x_V2_.png');
+  background-size: 400px 900px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 80px;
+  height: 18px;
+  background-position: -21px -368px;
+/*  margin-right: .385em;*/
+  position: relative;
+  vertical-align: baseline;
+}
+
+.reviews {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 49%;
+/*  font-size: 13px!important;
+  line-height: 19px!important;*/
+ /* position: absolute;*/
+  text-align: center;
+/*  vertical-align: baseline;*/
+}
+
+.icon-popover {
+  background-image: url('AmazonUIBaseCSS-sprite_1x_V2_.png');
+  background-size: 400px 900px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 7px;
+  height: 5px;
+  background-position: -90px -5px;
+  margin: 3px 0 0 .385em;
+  opacity: .6;
+/*  position: relative;*/
+  vertical-align: text-top;
+}
+
+.productDetailsBullet {
+  color: #C60;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-decoration: none;
+/*  position: relative;*/
+  margin-left: 4px;
+}
+
+.featureBullets {
+  margin: 10px 0 18px 0;
+
+}
+
+.featureUl {
+  color: #949494;
+  margin: 0 0 0 18px;
+  padding: 0;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  width: 330px;
+}
+
+.featureLi {
+  color: #111;
+  margin: 0 0 5px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: light;
+/*  word-wrap: break-word;*/
+}
+
+.compare {
+  margin-bottom: 10px;
+}
+
+.usedOrNew {
+  margin: 10px 0 10px 0;
+}
+
+.freeShippingColor {
+  color: #555;
+  font-size: 15px;
+}
+
+ul.ulist {
+  list-style: none;
+  margin-bottom: 8px;
+  }
+  ul.ulist li {
+    display: inline-block;
+  }
+
+a {
+  color: #0066c0;
+  font-weight: 400;
+  text-transform: none;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: .9!important;
+  padding: 0;
+  margin: 0;
+}
+
+.hr {
+  background-color: transparent;
+  display: block;
+  height: 1px;
+  border-width: 0;
+  border-top: 1px solid #e7e7e7;
+  line-height: 19px;
+  margin-top: 8px;
+  margin-bottom: 14px;
+}

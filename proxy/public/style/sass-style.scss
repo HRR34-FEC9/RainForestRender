@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+$font-stack: 'Roboto', sans-serif;
+$primary-color: black;
+
+#bottom {
+    width: 100%;
+    
+    #ads {
+        width: 33%;
+        background-color:grey;
+        float: left;
+    }
+    #review_block {
+        width: 66%;
+        float:left;
+
+        .review {
+            width: inherit;
+            display: inline-block;
+            font-family: $font-stack;
+            font-size: 14px;
+            color: $primary-color;
+            margin-bottom: 30px;
+        
+            .user {
+                width: inherit;
+                height: 35px;
+                display: inline-block;
+                margin-bottom: 0px; 
+        
+                .avatar {
+                    margin-right: 10px;
+                    float: left;
+        
+                    img {
+                        height: 35px; 
+                        width: 35px;
+                    }
+                }
+                .username {
+                    float: left;
+                    line-height: 30px;
+                }
+            }
+        
+            .rating_title_box {
+                width: inherit;
+                height: 18px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+        
+                .stars {
+                    margin-right: 5px;
+                    float: left;
+                }
+                .title {
+                    font-weight: bold;
+                    float: left;
+                }
+            }
+        
+            .date {
+                color: grey;
+                height: 20px;
+            }
+        
+            .version {
+                color: grey;
+            }
+        
+            .text {
+                line-height: 18px;
+            } 
+        
+            .gallery {
+                width: inherit;
+                height: auto;
+                display: inline-block;
+                margin-top: 10px;
+                margin-bottom: 0;
+                .image {
+                    width: 130px;
+                    height: 90px;
+                    margin-right: 5px;
+                    margin-bottom: 3px;
+                    float: left;
+                }
+            }
+            .bottom_box {
+                width: inherit;
+        
+                .helpful {
+                    color: grey;
+                }
+                .helpful-button {
+                    width: 90px;
+                    height: 25px;
+                    padding: 5px;
+                    margin-right: 5px;
+                    margin-top: 5px;
+                    float: left;
+                }
+                .buttons {
+                    float: left;
+                    margin-top: 5px;
+                }   
+            } 
+        }    
+    }
+}
+
+
+
+
