@@ -11,41 +11,47 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(express.static(path.join(__dirname, './public')));
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 const proxy = httpProxy.createProxyServer();
 
-app.get('/api/productdata/product', (req, res) =>
+app.get('/api/productdata/q/:productId', (req, res) =>
   proxy.web(req, res, {
-    target: 'http://localhost:3004'
+    target: 'http://pattribs-env.e2qskcpuit.us-east-2.elasticbeanstalk.com'
   })
 );
 
 app.get('/products', (req, res) =>
   proxy.web(req, res, {
-    target: 'http://localhost:3001'
+    target: 'http://product-carousel.v7gashbsdz.us-west-2.elasticbeanstalk.com'
   })
 );
 
 app.get('/productsdisplay', (req, res) =>
   proxy.web(req, res, {
-    target: 'http://localhost:710'
+    target: 'http://rainforest-customer-reviews.us-west-1.elasticbeanstalk.com/'
   })
 );
 
 app.get('/cr/reviews/:productId', (req, res) =>
   proxy.web(req, res, {
-    target: 'http://localhost:2000'
+    target: 'http://rainforest-customer-reviews.us-west-1.elasticbeanstalk.com'
   })
 );
 
-app.get('/cr/images/:reviewId ', (req, res) =>
+app.get('/cr/images/:reviewId', (req, res) =>
   proxy.web(req, res, {
-    target: 'http://localhost:2000'
+    target: 'http://rainforest-customer-reviews.us-west-1.elasticbeanstalk.com'
   })
 );
 
-app.patch('/cr/reviews/:reviewId ', (req, res) =>
+app.patch('/cr/reviews/:reviewId', (req, res) =>
   proxy.web(req, res, {
-    target: 'http://localhost:2000'
+    target: 'http://rainforest-customer-reviews.us-west-1.elasticbeanstalk.com'
   })
 );
 
